@@ -1,0 +1,15 @@
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\bin\Debug\netcoreapp2.2\JustInMindServer.dll.config
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\bin\Debug\netcoreapp2.2\JustInMindServer.deps.json
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\bin\Debug\netcoreapp2.2\JustInMindServer.runtimeconfig.json
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\bin\Debug\netcoreapp2.2\JustInMindServer.runtimeconfig.dev.json
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\bin\Debug\netcoreapp2.2\JustInMindServer.dll
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\bin\Debug\netcoreapp2.2\JustInMindServer.pdb
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\obj\Debug\netcoreapp2.2\JustInMindServer.csprojAssemblyReference.cache
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\obj\Debug\netcoreapp2.2\JustInMindServer.csproj.CoreCompileInputs.cache
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\obj\Debug\netcoreapp2.2\JustInMindServer.RazorAssemblyInfo.cache
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\obj\Debug\netcoreapp2.2\JustInMindServer.RazorAssemblyInfo.cs
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\obj\Debug\netcoreapp2.2\JustInMindServer.AssemblyInfoInputs.cache
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\obj\Debug\netcoreapp2.2\JustInMindServer.AssemblyInfo.cs
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\obj\Debug\netcoreapp2.2\JustInMindServer.RazorTargetAssemblyInfo.cache
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\obj\Debug\netcoreapp2.2\JustInMindServer.dll
+F:\MyWorks\C#\JustInMindServer\JustInMindServer\obj\Debug\netcoreapp2.2\JustInMindServer.pdb
