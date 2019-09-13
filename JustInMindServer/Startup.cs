@@ -31,7 +31,6 @@ namespace JustInMindServer
             string connectionString = Configuration.GetConnectionString("ConnectionString");
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddSingleton<IRepository<Ticket>, TicketRepository>(tr => new TicketRepository(connectionString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

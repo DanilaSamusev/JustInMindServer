@@ -2,8 +2,6 @@ using JustInMindServer.Models;
 using JustInMindServer.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
-
-
 namespace JustInMindServer.Controllers
 {
     [Produces("application/json")]
@@ -19,11 +17,20 @@ namespace JustInMindServer.Controllers
             _ticketRepository = ticketRepository;
         }
 
-        [HttpGet("tickets")]
+        [HttpGet("allTickets")]
         public IActionResult GetAllTickets()
         {
 
             return Ok(_ticketRepository.GetAll());
         }
+        
+        [HttpPut("addTicket")]
+        public void Add()
+        {
+            
+            
+        }
+        
+        
     }
 }
