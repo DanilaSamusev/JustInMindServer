@@ -1,6 +1,8 @@
-namespace JustInMindServer.Repositories
+using JustInMindServer.Models;
+
+namespace JustInMindServer.Repositories.Interfaces
 {
-    public class ITicketRepository
+    public interface ITicketRepository : IRepository<Ticket>
     {
         
     }

@@ -1,6 +1,11 @@
 using JustInMindServer.Models;
 using JustInMindServer.Repositories;
+using JustInMindServer.Repositories.Implementations;
+using JustInMindServer.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Ninject;
+
+//https://localhost:5001/api/ticket/allTickets
 
 namespace JustInMindServer.Controllers
 {
@@ -12,9 +17,12 @@ namespace JustInMindServer.Controllers
         
         private readonly IRepository<Ticket> _ticketRepository;
         
-        public TicketController(IRepository<Ticket> ticketRepository)
+        public TicketController()
         {
-            _ticketRepository = ticketRepository;
+            var ninjectKernel = new StandardKernel();
+            ninjectKernel.Bind<ITicketRepository>().To<TicketRepository>();
+
+            _ticketRepository = ninjectKernel.Get<ITicketRepository>();
         }
 
         [HttpGet("allTickets")]

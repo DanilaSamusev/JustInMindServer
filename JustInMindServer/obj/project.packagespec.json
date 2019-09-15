@@ -30,10 +30,6 @@
   "frameworks": {
     "netcoreapp2.2": {
       "dependencies": {
-        "Dapper": {
-          "target": "Package",
-          "version": "[2.0.4, )"
-        },
         "Microsoft.AspNetCore": {
           "target": "Package",
           "version": "[2.2.0, )"
@@ -55,6 +51,18 @@
         "MySql.Data": {
           "target": "Package",
           "version": "[8.0.17, )"
+        },
+        "Ninject": {
+          "target": "Package",
+          "version": "[4.0.0-beta-0134, )"
+        },
+        "Ninject.MVC5": {
+          "target": "Package",
+          "version": "[3.3.0, )"
+        },
+        "Ninject.Web.Common": {
+          "target": "Package",
+          "version": "[3.3.1, )"
         }
       },
       "imports": [

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "6c1f93e467d7a72253ae5a58d035f3d4bcd1b92d"
+    "signature": "ee7dff752d62c1db66ddeae0a01e353361941116"
   },
   "compilationOptions": {
     "defines": [
@@ -24,12 +24,14 @@
     ".NETCoreApp,Version=v2.2": {
       "JustInMindServer/1.0.0": {
         "dependencies": {
-          "Dapper": "2.0.4",
           "Microsoft.AspNetCore": "2.2.0",
           "Microsoft.AspNetCore.HttpsPolicy": "2.2.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
-          "MySql.Data": "8.0.17"
+          "MySql.Data": "8.0.17",
+          "Ninject": "4.0.0-beta-0134",
+          "Ninject.MVC5": "3.3.0",
+          "Ninject.Web.Common": "3.3.1"
         },
         "runtime": {
           "JustInMindServer.dll": {}
@@ -52,20 +54,6 @@
         },
         "compile": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
-        }
-      },
-      "Dapper/2.0.4": {
-        "dependencies": {
-          "System.Reflection.Emit.Lightweight": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Dapper.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.4.31833"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/Dapper.dll": {}
         }
       },
       "Google.Protobuf/3.6.1": {
@@ -1637,6 +1625,52 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "Ninject/4.0.0-beta-0134": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "System.ComponentModel": "4.0.1",
+          "System.Data.Common": "4.1.0",
+          "System.Diagnostics.Contracts": "4.0.1",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/Ninject.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.5/Ninject.dll": {}
+        }
+      },
+      "Ninject.MVC5/3.3.0": {
+        "runtime": {
+          "lib/net45/Ninject.Web.Mvc.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/net45/Ninject.Web.Mvc.dll": {}
+        }
+      },
+      "Ninject.Web.Common/3.3.1": {
+        "dependencies": {
+          "Ninject": "4.0.0-beta-0134"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ninject.Web.Common.dll": {
+            "assemblyVersion": "3.3.1.0",
+            "fileVersion": "3.3.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Ninject.Web.Common.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "runtimeTargets": {
           "runtime/debian.8-x64/native/_._": {
@@ -1851,6 +1885,11 @@
           "System.Threading": "4.3.0"
         }
       },
+      "System.ComponentModel/4.0.1": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
       "System.ComponentModel.Annotations/4.5.0": {},
       "System.Configuration.ConfigurationManager/4.4.1": {
         "dependencies": {
@@ -1873,6 +1912,23 @@
           "System.IO": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Text.Encoding": "4.3.0"
+        }
+      },
+      "System.Data.Common/4.1.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.Diagnostics.Contracts/4.0.1": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -2935,13 +2991,6 @@
       "path": "bouncycastle.netcore/1.8.3",
       "hashPath": "bouncycastle.netcore.1.8.3.nupkg.sha512"
     },
-    "Dapper/2.0.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-D1INbXigB4HaZcr4O77Th5vcS+dDoDFeRNwCg6/1glk+COSYAII/IxkcEfD8H4pHfs+vycnkNOa5xf/FlIXaxA==",
-      "path": "dapper/2.0.4",
-      "hashPath": "dapper.2.0.4.nupkg.sha512"
-    },
     "Google.Protobuf/3.6.1": {
       "type": "package",
       "serviceable": true,
@@ -3628,6 +3677,27 @@
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
     },
+    "Ninject/4.0.0-beta-0134": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZsS3WF1i86ddF2F9NQO1w3uKDtZ2NKM1OnDkzhHE5tZq+jACioisRmslrks6PPHBMQmERvM+ttXZ+DddDILCCQ==",
+      "path": "ninject/4.0.0-beta-0134",
+      "hashPath": "ninject.4.0.0-beta-0134.nupkg.sha512"
+    },
+    "Ninject.MVC5/3.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EmAAwz6urnQChHaHnPMKUf9QrkAC9cO3hVJv6+Ekg0dBGh3nzPt/ECd5V8XpgBYQcJEPip4MGsZcqj6FMGRfaA==",
+      "path": "ninject.mvc5/3.3.0",
+      "hashPath": "ninject.mvc5.3.3.0.nupkg.sha512"
+    },
+    "Ninject.Web.Common/3.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XqKY7k6wrgqeg+dtCTBiOt6xp5Fl2izf/A9Poh7gip03QiFUexECbZ8Nk79ns/Pdf2UPfKiAictRMuC/wi33rw==",
+      "path": "ninject.web.common/3.3.1",
+      "hashPath": "ninject.web.common.3.3.1.nupkg.sha512"
+    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3789,6 +3859,13 @@
       "path": "system.collections.immutable/1.3.1",
       "hashPath": "system.collections.immutable.1.3.1.nupkg.sha512"
     },
+    "System.ComponentModel/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tN5DPMYg6yFO5lF5L5hF6TIZDcRQ/+f1YcXGP8y2Yy4971XoxPOLH4lkkL20v6zb4aAVsp+xrkRwzMFeR5ZHqw==",
+      "path": "system.componentmodel/4.0.1",
+      "hashPath": "system.componentmodel.4.0.1.nupkg.sha512"
+    },
     "System.ComponentModel.Annotations/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -3809,6 +3886,20 @@
       "sha512": "sha512-oIpoSlg8mzJ4zjK+EAfa5JX52HJUZmOS95TvEgMHnzM819OIwolE/6NvtJ8Mi7IfQscPbh18HAOSDfbQ0RMMgg==",
       "path": "system.console/4.3.0",
       "hashPath": "system.console.4.3.0.nupkg.sha512"
+    },
+    "System.Data.Common/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DeahGetUucjHvnBefS9NPhnkQunFmJ/DEI+88kHe49Grj8jUW2VYI8O+fI4N24zyHDF78qMUT74/WLWlD9KKeA==",
+      "path": "system.data.common/4.1.0",
+      "hashPath": "system.data.common.4.1.0.nupkg.sha512"
+    },
+    "System.Diagnostics.Contracts/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BM5vK2KCJYMFDO9y7FJwxc6LwvICy9XlY2Iy8jr6719qUk1RDI3fTzExt+3Ir+Zyatfj0sS6AD2AW07UxM0Iag==",
+      "path": "system.diagnostics.contracts/4.0.1",
+      "hashPath": "system.diagnostics.contracts.4.0.1.nupkg.sha512"
     },
     "System.Diagnostics.Debug/4.3.0": {
       "type": "package",
