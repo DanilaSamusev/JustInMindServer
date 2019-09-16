@@ -44,12 +44,7 @@
             <e p="UserRepository.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
-            <e p="ICommentRepository.cs" t="Include" />
-            <e p="IFeedbackRepository.cs" t="Include" />
-            <e p="IHistoryRepository.cs" t="Include" />
             <e p="IRepository.cs" t="Include" />
-            <e p="ITicketRepository.cs" t="Include" />
-            <e p="IUserRepository.cs" t="Include" />
           </e>
         </e>
         <e p="Services" t="Include" />

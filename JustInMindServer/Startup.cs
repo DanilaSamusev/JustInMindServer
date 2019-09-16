@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using JustInMindServer.Models;
+using JustInMindServer.Repositories;
+using JustInMindServer.Repositories.Implementations;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
 
 namespace JustInMindServer
 {
@@ -11,6 +13,7 @@ namespace JustInMindServer
     {
         public Startup(IConfiguration configuration)
         {
+            
             Configuration = configuration;
         }
 
@@ -22,6 +25,12 @@ namespace JustInMindServer
             
             string connectionString = Configuration.GetConnectionString("ConnectionString");
 
+            services.AddSingleton<IRepository<Ticket>, TicketRepository>();
+            services.AddSingleton<IRepository<User>, UserRepository>();
+            services.AddSingleton<IRepository<History>, HistoryRepository>();
+            services.AddSingleton<IRepository<Feedback>, FeedbackRepository>();
+            services.AddSingleton<IRepository<Comment>, CommentRepository>();
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

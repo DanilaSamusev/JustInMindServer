@@ -1,11 +1,10 @@
 using System;
 using System.Collections.Generic;
 using JustInMindServer.Models;
-using JustInMindServer.Repositories.Interfaces;
 
 namespace JustInMindServer.Repositories.Implementations
 {
-    public class TicketRepository : ITicketRepository
+    public class TicketRepository : IRepository<Ticket>
     {
         public string GetAll()
         {

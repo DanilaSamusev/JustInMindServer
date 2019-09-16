@@ -1,9 +1,8 @@
-using System.Collections.Generic;
 using JustInMindServer.Models;
 
-namespace JustInMindServer.Repositories
+namespace JustInMindServer.Repositories.Implementations
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : IRepository<User>
     {
         public string GetAll()
         {
