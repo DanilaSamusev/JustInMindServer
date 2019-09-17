@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Danik\.Rider2019.1\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Danik\.Rider2019.1\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\Danik\.Rider2019.1\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Danik\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_JustInMindServer.1508591042.00" t="ExcludeRecursive" />
     <e p="F:\MyWorks\C#\JustInMindServer" t="IncludeFlat">
@@ -20,6 +21,7 @@
           <e p="Comment.cs" t="Include" />
           <e p="Feedback.cs" t="Include" />
           <e p="History.cs" t="Include" />
+          <e p="Table.cs" t="Include" />
           <e p="Ticket.cs" t="Include" />
           <e p="User.cs" t="Include" />
           <e p="UserRole.cs" t="Include" />
@@ -36,8 +38,13 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Repositories" t="Include">
+          <e p="Contexts" t="Include">
+            <e p="TicketContext.cs" t="Include" />
+            <e p="UserContext.cs" t="Include" />
+          </e>
           <e p="Implementations" t="Include">
             <e p="CommentRepository.cs" t="Include" />
+            <e p="EntityDbContext.cs" t="Include" />
             <e p="FeedbackRepository.cs" t="Include" />
             <e p="HistoryRepository.cs" t="Include" />
             <e p="TicketRepository.cs" t="Include" />

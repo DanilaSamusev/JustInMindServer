@@ -2,26 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36fc999e-49e8-4dc3-8a4a-6056f0699ce7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/JustInMindServer/Models/Table.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JustInMindServer/Repositories/Contexts/TicketContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JustInMindServer/Repositories/Contexts/UserContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/EntityDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JustInMindServer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JustInMindServer/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JustInMindServer/.idea/dataSources/a6db95ff-389b-46a0-b14c-0b4ed1745425.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JustInMindServer/.idea/dataSources/a6db95ff-389b-46a0-b14c-0b4ed1745425.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JustInMindServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JustInMindServer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/Controllers/TicketController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/Controllers/TicketController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/JustInMindServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/JustInMindServer.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JustInMindServer/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JustInMindServer/Models/Ticket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/Models/Ticket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JustInMindServer/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/CommentRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/CommentRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/FeedbackRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/FeedbackRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/HistoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/HistoryRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/TicketRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/TicketRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/ICommentRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IFeedbackRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IHistoryRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/ITicketRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IUserRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JustInMindServer/bin/Debug/netcoreapp2.2/JustInMindServer.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/bin/Debug/netcoreapp2.2/JustInMindServer.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/bin/Debug/netcoreapp2.2/JustInMindServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/bin/Debug/netcoreapp2.2/JustInMindServer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/bin/Debug/netcoreapp2.2/JustInMindServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/bin/Debug/netcoreapp2.2/JustInMindServer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/obj/Debug/netcoreapp2.2/JustInMindServer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/obj/Debug/netcoreapp2.2/JustInMindServer.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JustInMindServer/obj/Debug/netcoreapp2.2/JustInMindServer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/obj/Debug/netcoreapp2.2/JustInMindServer.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/obj/Debug/netcoreapp2.2/JustInMindServer.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/obj/Debug/netcoreapp2.2/JustInMindServer.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/obj/Debug/netcoreapp2.2/JustInMindServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/obj/Debug/netcoreapp2.2/JustInMindServer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/obj/Debug/netcoreapp2.2/JustInMindServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/obj/Debug/netcoreapp2.2/JustInMindServer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/obj/JustInMindServer.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/obj/JustInMindServer.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JustInMindServer/obj/JustInMindServer.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/obj/JustInMindServer.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JustInMindServer/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/JustInMindServer/obj/project.packagespec.json" afterDir="false" />
     </list>
@@ -58,38 +66,30 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="just_in_mind_db: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="just_in_mind_db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="just_in_mind_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JustInMindServer/Startup.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="31" column="77" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
-              <folding>
-                <marker date="1568642078220" expanded="true" signature="6:314" ph="..." />
-                <marker date="1568642078220" expanded="true" signature="342:1956" ph="{...}" />
-                <marker date="1568642078220" expanded="true" signature="369:1954" ph="{...}" />
-                <marker date="1568642078220" expanded="true" signature="428:504" ph="{...}" />
-                <marker date="1568642078220" expanded="true" signature="727:1340" ph="{...}" />
-                <marker date="1568642078220" expanded="true" signature="1528:1948" ph="{...}" />
-                <marker date="1568642078220" expanded="true" signature="1575:1652" ph="{...}" />
-                <marker date="1568642078220" expanded="true" signature="1669:1872" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IRepository.cs">
+        <entry file="file://$PROJECT_DIR$/JustInMindServer/Controllers/TicketController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="85">
+              <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="45" />
               <folding>
-                <marker date="1568552701758" expanded="true" signature="74:234" ph="{...}" />
-                <marker date="1568552701758" expanded="true" signature="112:232" ph="{...}" />
+                <marker date="1568745831150" expanded="true" signature="6:113" ph="..." />
+                <marker date="1568745831150" expanded="true" signature="200:818" ph="{...}" />
+                <marker date="1568745831150" expanded="true" signature="336:816" ph="{...}" />
+                <marker date="1568745831150" expanded="true" signature="477:547" ph="{...}" />
+                <marker date="1568745831150" expanded="true" signature="625:732" ph="{...}" />
+                <marker date="1568745831150" expanded="true" signature="790:810" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -98,16 +98,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/TicketRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+            <state relative-caret-position="306">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
-                <marker date="1568642078251" expanded="true" signature="6:78" ph="..." />
-                <marker date="1568642078251" expanded="true" signature="135:627" ph="{...}" />
-                <marker date="1568642078251" expanded="true" signature="193:625" ph="{...}" />
-                <marker date="1568642078251" expanded="true" signature="230:277" ph="{...}" />
-                <marker date="1568642078251" expanded="true" signature="317:393" ph="{...}" />
-                <marker date="1568642078251" expanded="true" signature="430:506" ph="{...}" />
-                <marker date="1568642078251" expanded="true" signature="543:619" ph="{...}" />
+                <marker date="1568739169306" expanded="true" signature="6:206" ph="..." />
+                <marker date="1568739169306" expanded="true" signature="263:1093" ph="{...}" />
+                <marker date="1568739169306" expanded="true" signature="321:1091" ph="{...}" />
+                <marker date="1568739169306" expanded="true" signature="371:576" ph="{...}" />
+                <marker date="1568739169306" expanded="true" signature="460:566" ph="{...}" />
+                <marker date="1568739169306" expanded="true" signature="616:859" ph="{...}" />
+                <marker date="1568739169306" expanded="true" signature="705:849" ph="{...}" />
+                <marker date="1568739169306" expanded="true" signature="896:972" ph="{...}" />
+                <marker date="1568739169306" expanded="true" signature="1009:1085" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JustInMindServer/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+              <folding>
+                <marker date="1568746075093" expanded="true" signature="6:314" ph="..." />
+                <marker date="1568746075093" expanded="true" signature="342:2226" ph="{...}" />
+                <marker date="1568746075093" expanded="true" signature="369:2224" ph="{...}" />
+                <marker date="1568746075093" expanded="true" signature="428:504" ph="{...}" />
+                <marker date="1568746075093" expanded="true" signature="727:1598" ph="{...}" />
+                <marker date="1568746075093" expanded="true" signature="1345:1483" ph="{...}" />
+                <marker date="1568746075093" expanded="true" signature="1786:2218" ph="{...}" />
+                <marker date="1568746075093" expanded="true" signature="1833:1910" ph="{...}" />
+                <marker date="1568746075093" expanded="true" signature="1927:2130" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -121,6 +143,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/JustInMindServer/app.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JustInMindServer/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/EntityDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JustInMindServer/Models/UserRole.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JustInMindServer/Models/History.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JustInMindServer/Models/Attachment.cs" root0="FORCE_HIGHLIGHTING" />
@@ -132,16 +155,19 @@
     <setting file="file://$PROJECT_DIR$/JustInMindServer/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/TicketRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JustInMindServer/Models/Table.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Contexts/UserContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Contexts/TicketContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/FeedbackRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/CommentRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/57139BFC-E1DA-4913-8884-2BBBF31D74D3/2a/3058b443/IEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JustInMindServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/HistoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JustInMindServer/Models/User.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Models/History.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Models/Feedback.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Models/Comment.cs" />
@@ -150,26 +176,32 @@
         <option value="$PROJECT_DIR$/JustInMindServer/Models/UserRole.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Repositories/IRepository.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/appsettings.json" />
-        <option value="$PROJECT_DIR$/JustInMindServer/Models/Ticket.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Repositories/ITicketRepository.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Repositories/IUserRepository.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Repositories/IFeedbackRepository.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/ICommentRepository.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IHistoryRepository.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Repositories/TicketRepository.cs" />
-        <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/FeedbackRepository.cs" />
-        <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/CommentRepository.cs" />
-        <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/HistoryRepository.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Services/NinjectRegistrations.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IUserRepository.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/ITicketRepository.cs" />
-        <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IRepository.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Infrastructure/NinjectDependencyResolver.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Program.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/NinjectRegistrations.cs" />
-        <option value="$PROJECT_DIR$/JustInMindServer/Controllers/TicketController.cs" />
+        <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IRepository.cs" />
+        <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/HistoryRepository.cs" />
+        <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/FeedbackRepository.cs" />
+        <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/CommentRepository.cs" />
+        <option value="$PROJECT_DIR$/JustInMindServer/Models/Table.cs" />
+        <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/TableRepository.cs" />
+        <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/EntityDbContext.cs" />
+        <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Contexts/UserContext.cs" />
+        <option value="$PROJECT_DIR$/JustInMindServer/Models/User.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/UserRepository.cs" />
+        <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Contexts/TicketContext.cs" />
+        <option value="$PROJECT_DIR$/JustInMindServer/Models/Ticket.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/TicketRepository.cs" />
+        <option value="$PROJECT_DIR$/JustInMindServer/Controllers/TicketController.cs" />
         <option value="$PROJECT_DIR$/JustInMindServer/Startup.cs" />
       </list>
     </option>
@@ -181,7 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="10" />
     <option name="width" value="1918" />
     <option name="height" value="1038" />
@@ -192,7 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -209,27 +240,20 @@
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="JustInMindServer" type="24d0babc:SolutionExplorerModelNode" />
               <item name="JustInMindServer" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="JustInMindServer" type="24d0babc:SolutionExplorerModelNode" />
               <item name="JustInMindServer" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Implementations" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="JustInMindServer" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="JustInMindServer" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Interfaces" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
     </panes>
   </component>
@@ -238,9 +262,10 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -298,12 +323,13 @@
       <updated>1567880584844</updated>
       <workItem from="1567880587593" duration="30196000" />
       <workItem from="1568550832238" duration="7956000" />
-      <workItem from="1568641639538" duration="439000" />
+      <workItem from="1568641639538" duration="13234000" />
+      <workItem from="1568735056048" duration="3954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38591000" />
+    <option name="totallyTimeSpent" value="55340000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -315,20 +341,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="10" width="1918" height="1038" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25296018" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2531983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.55916846" visible="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
-      <window_info anchor="bottom" id="NuGet" order="7" sideWeight="0.4989339" weight="0.32900432" />
+      <window_info anchor="bottom" id="NuGet" order="7" sideWeight="0.60927504" weight="0.32900432" />
       <window_info anchor="bottom" id="Performance Profiler" order="8" weight="0.32900432" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49946696" weight="0.32900432" />
@@ -336,13 +362,14 @@
       <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.49946696" weight="0.32900432" />
       <window_info anchor="bottom" id="REST Client" order="13" weight="0.32900432" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32900432" />
-      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5010661" side_tool="true" weight="0.32900432" />
-      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.4989339" weight="0.32900432" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.44083154" side_tool="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.4978678" weight="0.32900432" />
+      <window_info anchor="bottom" id="Database Console" order="17" weight="0.32900432" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.2196162" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.22334754" />
       <window_info anchor="right" id="Unit Tests Coverage" order="5" />
     </layout>
     <layout-to-restore>
@@ -430,18 +457,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Models/User.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding>
-            <marker date="1567939307493" expanded="true" signature="33:883" ph="{...}" />
-            <marker date="1567939307493" expanded="true" signature="57:881" ph="{...}" />
-            <marker date="1567939307493" expanded="true" signature="416:620" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JustInMindServer/Models/History.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -517,103 +532,11 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a6db95ff-389b-46a0-b14c-0b4ed1745425/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Models/Ticket.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <marker date="1568227252195" expanded="true" signature="48:1862" ph="{...}" />
-            <marker date="1568227252195" expanded="true" signature="74:1860" ph="{...}" />
-            <marker date="1568227252195" expanded="true" signature="917:1344" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/appsettings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IFeedbackRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1568393996590" expanded="true" signature="39:105" ph="{...}" />
-            <marker date="1568393996590" expanded="true" signature="82:103" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/ICommentRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1568394246057" expanded="true" signature="39:104" ph="{...}" />
-            <marker date="1568394246057" expanded="true" signature="81:102" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IHistoryRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <marker date="1568395205909" expanded="true" signature="39:104" ph="{...}" />
-            <marker date="1568395205909" expanded="true" signature="81:102" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/FeedbackRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1568396188756" expanded="true" signature="39:100" ph="{...}" />
-            <marker date="1568396188756" expanded="true" signature="77:98" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/CommentRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1568396223847" expanded="true" signature="39:99" ph="{...}" />
-            <marker date="1568396223847" expanded="true" signature="76:97" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/HistoryRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1568396300490" expanded="true" signature="39:99" ph="{...}" />
-            <marker date="1568396300490" expanded="true" signature="76:97" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IFeedbackRepository.cs" />
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/ICommentRepository.cs" />
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IHistoryRepository.cs" />
     <entry file="file://$PROJECT_DIR$/JustInMindServer/Services/NinjectRegistrations.cs" />
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/ITicketRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-          <folding>
-            <marker date="1568552661699" expanded="true" signature="82:168" ph="{...}" />
-            <marker date="1568552661699" expanded="true" signature="145:166" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/ITicketRepository.cs" />
     <entry file="file://$PROJECT_DIR$/JustInMindServer/Infrastructure/NinjectDependencyResolver.cs" />
     <entry file="file://$PROJECT_DIR$/JustInMindServer/app.config">
       <provider selected="true" editor-type-id="text-editor">
@@ -622,49 +545,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IUserRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-          <folding>
-            <marker date="1568486017212" expanded="true" signature="71:154" ph="{...}" />
-            <marker date="1568486017212" expanded="true" signature="131:152" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IUserRepository.cs" />
     <entry file="file://$PROJECT_DIR$/JustInMindServer/NinjectRegistrations.cs" />
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Controllers/TicketController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <marker date="1568558209362" expanded="true" signature="6:99" ph="..." />
-            <marker date="1568558209362" expanded="true" signature="187:757" ph="{...}" />
-            <marker date="1568558209362" expanded="true" signature="323:755" ph="{...}" />
-            <marker date="1568558209362" expanded="true" signature="436:469" ph="{...}" />
-            <marker date="1568558209362" expanded="true" signature="547:619" ph="{...}" />
-            <marker date="1568558209362" expanded="true" signature="685:731" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/TicketRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding>
-            <marker date="1568642078251" expanded="true" signature="6:78" ph="..." />
-            <marker date="1568642078251" expanded="true" signature="135:627" ph="{...}" />
-            <marker date="1568642078251" expanded="true" signature="193:625" ph="{...}" />
-            <marker date="1568642078251" expanded="true" signature="230:277" ph="{...}" />
-            <marker date="1568642078251" expanded="true" signature="317:393" ph="{...}" />
-            <marker date="1568642078251" expanded="true" signature="430:506" ph="{...}" />
-            <marker date="1568642078251" expanded="true" signature="543:619" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JustInMindServer/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -677,46 +559,262 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/UserRepository.cs">
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/HistoryRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="96">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <marker date="1568646387744" expanded="true" signature="6:64" ph="..." />
+            <marker date="1568646387744" expanded="true" signature="121:660" ph="{...}" />
+            <marker date="1568646387744" expanded="true" signature="181:658" ph="{...}" />
+            <marker date="1568646387744" expanded="true" signature="232:308" ph="{...}" />
+            <marker date="1568646387744" expanded="true" signature="349:425" ph="{...}" />
+            <marker date="1568646387744" expanded="true" signature="463:539" ph="{...}" />
+            <marker date="1568646387744" expanded="true" signature="576:652" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/FeedbackRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <marker date="1568646388471" expanded="true" signature="6:64" ph="..." />
+            <marker date="1568646388471" expanded="true" signature="121:665" ph="{...}" />
+            <marker date="1568646388471" expanded="true" signature="183:663" ph="{...}" />
+            <marker date="1568646388471" expanded="true" signature="235:311" ph="{...}" />
+            <marker date="1568646388471" expanded="true" signature="353:429" ph="{...}" />
+            <marker date="1568646388471" expanded="true" signature="468:544" ph="{...}" />
+            <marker date="1568646388471" expanded="true" signature="581:657" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/CommentRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
           <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding>
-            <marker date="1568641873293" expanded="true" signature="6:64" ph="..." />
-            <marker date="1568641873293" expanded="true" signature="105:618" ph="{...}" />
-            <marker date="1568641873293" expanded="true" signature="159:616" ph="{...}" />
-            <marker date="1568641873293" expanded="true" signature="196:272" ph="{...}" />
-            <marker date="1568641873293" expanded="true" signature="310:386" ph="{...}" />
-            <marker date="1568641873293" expanded="true" signature="421:497" ph="{...}" />
-            <marker date="1568641873293" expanded="true" signature="534:610" ph="{...}" />
+            <marker date="1568646389058" expanded="true" signature="6:64" ph="..." />
+            <marker date="1568646389058" expanded="true" signature="121:660" ph="{...}" />
+            <marker date="1568646389058" expanded="true" signature="181:658" ph="{...}" />
+            <marker date="1568646389058" expanded="true" signature="232:308" ph="{...}" />
+            <marker date="1568646389058" expanded="true" signature="349:425" ph="{...}" />
+            <marker date="1568646389058" expanded="true" signature="463:539" ph="{...}" />
+            <marker date="1568646389058" expanded="true" signature="576:652" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="92" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a6db95ff-389b-46a0-b14c-0b4ed1745425/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://a6db95ff-389b-46a0-b14c-0b4ed1745425/schema/just_in_mind_db/table/table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/57139BFC-E1DA-4913-8884-2BBBF31D74D3/2a/3058b443/IEnumerable`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6db95ff-389b-46a0-b14c-0b4ed1745425/schema/just_in_mind_db/table/table">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="e50fab41-8eb4-47e7-927e-87ecc5ee3e57">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="id" enabled="false" position="-1" />
+          </column-attributes>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Interfaces/IRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="35" />
           <folding>
-            <marker date="1568552701758" expanded="true" signature="74:234" ph="{...}" />
-            <marker date="1568552701758" expanded="true" signature="112:232" ph="{...}" />
+            <marker date="1568645684184" expanded="true" signature="74:242" ph="{...}" />
+            <marker date="1568645684184" expanded="true" signature="112:240" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Models/Table.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding>
+            <marker date="1568649576123" expanded="true" signature="33:277" ph="{...}" />
+            <marker date="1568649576123" expanded="true" signature="58:275" ph="{...}" />
+            <marker date="1568649576123" expanded="true" signature="126:172" ph="{...}" />
+            <marker date="1568649576123" expanded="true" signature="195:269" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/TableRepository.cs" />
+    <entry file="das://a6db95ff-389b-46a0-b14c-0b4ed1745425/schema/just_in_mind_db/table/tickets">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="e50fab41-8eb4-47e7-927e-87ecc5ee3e57">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/EntityDbContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="54" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="15" selection-end-column="54" />
+          <folding>
+            <marker date="1568651637592" expanded="true" signature="6:67" ph="..." />
+            <marker date="1568651637592" expanded="true" signature="124:540" ph="{...}" />
+            <marker date="1568651637592" expanded="true" signature="171:538" ph="{...}" />
+            <marker date="1568651637592" expanded="true" signature="272:477" ph="{...}" />
+            <marker date="1568651637592" expanded="true" signature="328:467" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6db95ff-389b-46a0-b14c-0b4ed1745425/schema/just_in_mind_db/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="e50fab41-8eb4-47e7-927e-87ecc5ee3e57">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Contexts/UserContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="54" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="15" selection-end-column="54" />
+          <folding>
+            <marker date="1568656685164" expanded="true" signature="6:67" ph="..." />
+            <marker date="1568656685164" expanded="true" signature="117:529" ph="{...}" />
+            <marker date="1568656685164" expanded="true" signature="160:527" ph="{...}" />
+            <marker date="1568656685164" expanded="true" signature="261:466" ph="{...}" />
+            <marker date="1568656685164" expanded="true" signature="317:456" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Models/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <marker date="1568656941891" expanded="true" signature="33:330" ph="{...}" />
+            <marker date="1568656941891" expanded="true" signature="57:328" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Contexts/TicketContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <marker date="1568657600199" expanded="true" signature="6:67" ph="..." />
+            <marker date="1568657600199" expanded="true" signature="117:526" ph="{...}" />
+            <marker date="1568657600199" expanded="true" signature="162:524" ph="{...}" />
+            <marker date="1568657600199" expanded="true" signature="254:459" ph="{...}" />
+            <marker date="1568657600199" expanded="true" signature="310:449" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/UserRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <marker date="1568657600139" expanded="true" signature="6:129" ph="..." />
+            <marker date="1568657600139" expanded="true" signature="186:936" ph="{...}" />
+            <marker date="1568657600139" expanded="true" signature="240:934" ph="{...}" />
+            <marker date="1568657600139" expanded="true" signature="287:320" ph="{...}" />
+            <marker date="1568657600139" expanded="true" signature="371:590" ph="{...}" />
+            <marker date="1568657600139" expanded="true" signature="464:580" ph="{...}" />
+            <marker date="1568657600139" expanded="true" signature="628:704" ph="{...}" />
+            <marker date="1568657600139" expanded="true" signature="739:815" ph="{...}" />
+            <marker date="1568657600139" expanded="true" signature="852:928" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Models/Ticket.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <marker date="1568657783896" expanded="true" signature="48:596" ph="{...}" />
+            <marker date="1568657783896" expanded="true" signature="74:594" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Repositories/Implementations/TicketRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <marker date="1568739169306" expanded="true" signature="6:206" ph="..." />
+            <marker date="1568739169306" expanded="true" signature="263:1093" ph="{...}" />
+            <marker date="1568739169306" expanded="true" signature="321:1091" ph="{...}" />
+            <marker date="1568739169306" expanded="true" signature="371:576" ph="{...}" />
+            <marker date="1568739169306" expanded="true" signature="460:566" ph="{...}" />
+            <marker date="1568739169306" expanded="true" signature="616:859" ph="{...}" />
+            <marker date="1568739169306" expanded="true" signature="705:849" ph="{...}" />
+            <marker date="1568739169306" expanded="true" signature="896:972" ph="{...}" />
+            <marker date="1568739169306" expanded="true" signature="1009:1085" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JustInMindServer/Controllers/TicketController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="45" />
+          <folding>
+            <marker date="1568745831150" expanded="true" signature="6:113" ph="..." />
+            <marker date="1568745831150" expanded="true" signature="200:818" ph="{...}" />
+            <marker date="1568745831150" expanded="true" signature="336:816" ph="{...}" />
+            <marker date="1568745831150" expanded="true" signature="477:547" ph="{...}" />
+            <marker date="1568745831150" expanded="true" signature="625:732" ph="{...}" />
+            <marker date="1568745831150" expanded="true" signature="790:810" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JustInMindServer/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="31" column="77" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
+        <state relative-caret-position="335">
+          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
           <folding>
-            <marker date="1568642078220" expanded="true" signature="6:314" ph="..." />
-            <marker date="1568642078220" expanded="true" signature="342:1956" ph="{...}" />
-            <marker date="1568642078220" expanded="true" signature="369:1954" ph="{...}" />
-            <marker date="1568642078220" expanded="true" signature="428:504" ph="{...}" />
-            <marker date="1568642078220" expanded="true" signature="727:1340" ph="{...}" />
-            <marker date="1568642078220" expanded="true" signature="1528:1948" ph="{...}" />
-            <marker date="1568642078220" expanded="true" signature="1575:1652" ph="{...}" />
-            <marker date="1568642078220" expanded="true" signature="1669:1872" ph="{...}" />
+            <marker date="1568746075093" expanded="true" signature="6:314" ph="..." />
+            <marker date="1568746075093" expanded="true" signature="342:2226" ph="{...}" />
+            <marker date="1568746075093" expanded="true" signature="369:2224" ph="{...}" />
+            <marker date="1568746075093" expanded="true" signature="428:504" ph="{...}" />
+            <marker date="1568746075093" expanded="true" signature="727:1598" ph="{...}" />
+            <marker date="1568746075093" expanded="true" signature="1345:1483" ph="{...}" />
+            <marker date="1568746075093" expanded="true" signature="1786:2218" ph="{...}" />
+            <marker date="1568746075093" expanded="true" signature="1833:1910" ph="{...}" />
+            <marker date="1568746075093" expanded="true" signature="1927:2130" ph="{...}" />
           </folding>
         </state>
       </provider>

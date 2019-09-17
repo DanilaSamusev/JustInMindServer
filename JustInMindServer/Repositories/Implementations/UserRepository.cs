@@ -1,12 +1,26 @@
+using System.Collections.Generic;
+using System.Linq;
 using JustInMindServer.Models;
+using JustInMindServer.Repositories.Contexts;
 
 namespace JustInMindServer.Repositories.Implementations
 {
     public class UserRepository : IRepository<User>
     {
-        public string GetAll()
+        
+        public UserRepository()
         {
-            throw new System.NotImplementedException();
+            
+        }
+        
+        public IEnumerable<User> GetAll()
+        {
+            using (EntityDbContext dbContext = new EntityDbContext())
+            {
+                var users = dbContext.Users.ToList();
+                
+                return users;
+            }
         }
 
         public User GetById(long id)

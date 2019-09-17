@@ -30,6 +30,12 @@ namespace JustInMindServer
             services.AddSingleton<IRepository<History>, HistoryRepository>();
             services.AddSingleton<IRepository<Feedback>, FeedbackRepository>();
             services.AddSingleton<IRepository<Comment>, CommentRepository>();
+
+            services.AddCors(options => options.AddPolicy("CorsPolicy",
+                builder =>
+                {
+                    builder.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000").AllowCredentials();
+                }));
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -46,8 +52,8 @@ namespace JustInMindServer
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
-            app.UseHttpsRedirection();
+            
+            app.UseCors("CorsPolicy");
             app.UseMvc();
         }
     }

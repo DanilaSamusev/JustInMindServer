@@ -1,10 +1,11 @@
+using System.Collections.Generic;
 using JustInMindServer.Models;
 
 namespace JustInMindServer.Repositories.Implementations
 {
     public class HistoryRepository : IRepository<History>
     {
-        public string GetAll()
+        public IEnumerable<History> GetAll()
         {
             throw new System.NotImplementedException();
         }

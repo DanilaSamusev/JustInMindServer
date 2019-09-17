@@ -1125,7 +1125,7 @@
     <table id="283" parent="3" name="users"/>
     <column id="284" parent="282" name="id">
       <Position>1</Position>
-      <DataType>bigint(20)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>

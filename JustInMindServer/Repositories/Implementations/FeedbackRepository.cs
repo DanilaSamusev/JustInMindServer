@@ -1,10 +1,11 @@
+using System.Collections.Generic;
 using JustInMindServer.Models;
 
 namespace JustInMindServer.Repositories.Implementations
 {
     public class FeedbackRepository : IRepository<Feedback>
     {
-        public string GetAll()
+        public IEnumerable<Feedback> GetAll()
         {
             throw new System.NotImplementedException();
         }

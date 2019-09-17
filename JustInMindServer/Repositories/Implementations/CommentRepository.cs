@@ -1,10 +1,11 @@
+using System.Collections.Generic;
 using JustInMindServer.Models;
 
 namespace JustInMindServer.Repositories.Implementations
 {
     public class CommentRepository : IRepository<Comment>
     {
-        public string GetAll()
+        public IEnumerable<Comment> GetAll()
         {
             throw new System.NotImplementedException();
         }
