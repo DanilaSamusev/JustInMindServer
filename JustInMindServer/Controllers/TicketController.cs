@@ -1,9 +1,5 @@
-using System;
-using JustInMindServer.Models;
-using JustInMindServer.Repositories;
+using JustInMindServer.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-
-//http://localhost:5001/api/ticket/allTickets
 
 namespace JustInMindServer.Controllers
 {
@@ -12,9 +8,9 @@ namespace JustInMindServer.Controllers
     [ApiController]
     public class TicketController : Controller
     {
-        private readonly IRepository<Ticket> _ticketRepository;
+        private readonly ITicketRepository _ticketRepository;
 
-        public TicketController(IRepository<Ticket> ticketRepository)
+        public TicketController(ITicketRepository ticketRepository)
         {
             _ticketRepository = ticketRepository;
         }
@@ -22,14 +18,9 @@ namespace JustInMindServer.Controllers
         [HttpGet("allTickets")]
         public IActionResult GetAllTickets()
         {
-            var tickets = _ticketRepository.GetAll();
-
-            return Ok(tickets);
-        }
-
-        [HttpPut("addTicket")]
-        public void Add()
-        {
+            var ticketsDto = _ticketRepository.GetAllDto();
+            
+            return Ok(ticketsDto);
         }
     }
 }

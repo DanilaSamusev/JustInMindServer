@@ -1,9 +1,10 @@
+using JustInMindServer.Entities.DTO;
 using JustInMindServer.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace JustInMindServer.Repositories.Contexts
 {
-    public class TicketContext : DbContext
+    public class TicketDTOContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -14,6 +15,7 @@ namespace JustInMindServer.Repositories.Contexts
                 );
             }
         }
-        public virtual DbSet<Ticket> Tickets { get; set; }
+
+        public virtual DbSet<TicketDTO> TicketsDto { get; set; }
     }
 }

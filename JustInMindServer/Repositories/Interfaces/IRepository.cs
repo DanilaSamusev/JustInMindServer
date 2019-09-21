@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace JustInMindServer.Repositories
+namespace JustInMindServer.Repositories.Interfaces
 {
     public interface IRepository<T>
     {

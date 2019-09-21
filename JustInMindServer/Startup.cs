@@ -1,6 +1,7 @@
 ﻿using JustInMindServer.Models;
 using JustInMindServer.Repositories;
 using JustInMindServer.Repositories.Implementations;
+using JustInMindServer.Repositories.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -25,7 +26,9 @@ namespace JustInMindServer
             
             string connectionString = Configuration.GetConnectionString("ConnectionString");
 
-            services.AddSingleton<IRepository<Ticket>, TicketRepository>();
+            services.AddSingleton<TicketRepository>();
+            
+            services.AddSingleton<ITicketRepository, TicketRepository>();
             services.AddSingleton<IRepository<User>, UserRepository>();
             services.AddSingleton<IRepository<History>, HistoryRepository>();
             services.AddSingleton<IRepository<Feedback>, FeedbackRepository>();
