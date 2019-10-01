@@ -22,14 +22,14 @@ namespace JustInMindServer.Repositories.Implementations
         
         public IEnumerable<TicketDTO> GetAllDto()
         {
-            using (TicketDTOContext dbContext = new TicketDTOContext())
-            {
+            TicketDTOContext dbContext = new TicketDTOContext();
+            
                 var ticketsDto = dbContext.TicketsDto.FromSql(
                     "Select id, name, desiredResolutionDate, urgencyId, stateId from tickets")
                     .ToList();
 
                 return ticketsDto;
-            }
+            
         }
 
         public Ticket GetById(long id)

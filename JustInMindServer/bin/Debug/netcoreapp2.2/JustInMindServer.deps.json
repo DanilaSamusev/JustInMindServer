@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "7c61d8ce84792e9f4befbd15407aab6e035ccfd7"
+    "signature": "7d00b2749484a00f32592d6897cee29161877662"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,9 @@
     ".NETCoreApp,Version=v2.2": {
       "JustInMindServer/1.0.0": {
         "dependencies": {
+          "FluentValidation.AspNetCore": "8.5.0",
+          "FluentValidation.Mvc5": "8.5.0",
+          "FluentValidation.WebApi": "8.5.0",
           "Microsoft.AspNetCore": "2.2.0",
           "Microsoft.AspNetCore.HttpsPolicy": "2.2.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
@@ -55,6 +58,73 @@
         },
         "compile": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "FluentValidation/8.5.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/8.5.0": {
+        "dependencies": {
+          "FluentValidation": "8.5.0",
+          "FluentValidation.DependencyInjectionExtensions": "8.5.0",
+          "Microsoft.AspNetCore.Mvc": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {}
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/8.5.0": {
+        "dependencies": {
+          "FluentValidation": "8.5.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
+      "FluentValidation.Mvc5/8.5.0": {
+        "runtime": {
+          "lib/net45/FluentValidation.Mvc.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/net45/FluentValidation.Mvc.dll": {}
+        }
+      },
+      "FluentValidation.WebApi/8.5.0": {
+        "runtime": {
+          "lib/net45/FluentValidation.WebApi.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/net45/FluentValidation.WebApi.dll": {}
         }
       },
       "Google.Protobuf/3.6.1": {
@@ -3124,6 +3194,41 @@
       "sha512": "sha512-An0cxp/uGPkMWfjAVyHJWBQ9igea74Ma8rtMnpkEwjemx8EoVo7IUIFpFfxpBgVuSbpQueKo2m/CoSxxfLHTtw==",
       "path": "bouncycastle.netcore/1.8.3",
       "hashPath": "bouncycastle.netcore.1.8.3.nupkg.sha512"
+    },
+    "FluentValidation/8.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NVMvFn37UcTQqeiAt4TIFajbGcVzYvvG4MR9q9Nm96E68yp0gVIF+oWEM2GQmn1siRGrf+mgJwQmbBaHcCblDQ==",
+      "path": "fluentvalidation/8.5.0",
+      "hashPath": "fluentvalidation.8.5.0.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/8.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p6G4vG7ZSn6RioN71OxCBekAUtHzxE8M9KrJuOS6Q+g28lvfOYGH13h0v32Thc94eOpJJMHA84VH/9W6vQ7NmA==",
+      "path": "fluentvalidation.aspnetcore/8.5.0",
+      "hashPath": "fluentvalidation.aspnetcore.8.5.0.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/8.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/NmnmQG/z3xCmp6wL4ftMipQnlH7Dxn4Keitbn+2kF9QKU0NVfz7Mk9covneeGvoyd7you6ojAkNwsQJJInKMQ==",
+      "path": "fluentvalidation.dependencyinjectionextensions/8.5.0",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.8.5.0.nupkg.sha512"
+    },
+    "FluentValidation.Mvc5/8.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dtY2J1HPU6gaha0QSuTQuBeI3n0gQttO6nchBy8Fo5xRnicbcIiIAFq4fudL0v+F3y1vcgdCoxRRWrpFJ1GNpw==",
+      "path": "fluentvalidation.mvc5/8.5.0",
+      "hashPath": "fluentvalidation.mvc5.8.5.0.nupkg.sha512"
+    },
+    "FluentValidation.WebApi/8.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z0i+0Oz+NFPl3KOqsN9lIhnM61xq32cFoMOARngITJmA8tAcEZR/fbtSDfAk1HmWSHs2zJ90ljX3cMKzaEREnQ==",
+      "path": "fluentvalidation.webapi/8.5.0",
+      "hashPath": "fluentvalidation.webapi.8.5.0.nupkg.sha512"
     },
     "Google.Protobuf/3.6.1": {
       "type": "package",

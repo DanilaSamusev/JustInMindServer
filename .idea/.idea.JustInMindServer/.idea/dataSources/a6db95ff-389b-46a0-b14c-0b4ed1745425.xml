@@ -1121,99 +1121,118 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="282" parent="3" name="tickets"/>
-    <table id="283" parent="3" name="users"/>
-    <column id="284" parent="282" name="id">
+    <table id="282" parent="3" name="categories"/>
+    <table id="283" parent="3" name="tickets"/>
+    <table id="284" parent="3" name="users"/>
+    <column id="285" parent="282" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="282" name="name">
+    <column id="286" parent="282" name="name">
       <Position>2</Position>
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="282" name="description">
+    <key id="287" parent="282" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="288" parent="283" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="289" parent="283" name="name">
+      <Position>2</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="290" parent="283" name="description">
       <Position>3</Position>
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="282" name="createdOn">
+    <column id="291" parent="283" name="createdOn">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="282" name="desiredResolutionDate">
+    <column id="292" parent="283" name="desiredResolutionDate">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="282" name="assigneeId">
+    <column id="293" parent="283" name="assigneeId">
       <Position>6</Position>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="282" name="ownerId">
+    <column id="294" parent="283" name="ownerId">
       <Position>7</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="282" name="stateId">
+    <column id="295" parent="283" name="stateId">
       <Position>8</Position>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="282" name="categoryId">
+    <column id="296" parent="283" name="categoryId">
       <Position>9</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="282" name="urgencyId">
+    <column id="297" parent="283" name="urgencyId">
       <Position>10</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="282" name="approverId">
+    <column id="298" parent="283" name="approverId">
       <Position>11</Position>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="295" parent="282" name="id_UNIQUE">
+    <index id="299" parent="283" name="id_UNIQUE">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="296" parent="282" name="fk_assignee_id_idx">
+    <index id="300" parent="283" name="fk_assignee_id_idx">
       <ColNames>assigneeId</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="297" parent="282" name="fk_owner_id_idx">
+    <index id="301" parent="283" name="fk_owner_id_idx">
       <ColNames>ownerId</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="298" parent="282" name="fk_approver_id_idx">
+    <index id="302" parent="283" name="fk_approver_id_idx">
       <ColNames>approverId</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="299" parent="282" name="PRIMARY">
+    <key id="303" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="300" parent="282" name="id_UNIQUE">
+    <key id="304" parent="283" name="id_UNIQUE">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>id_UNIQUE</UnderlyingIndexName>
     </key>
-    <foreign-key id="301" parent="282" name="fk_assignee_id">
+    <foreign-key id="305" parent="283" name="fk_assignee_id">
       <ColNames>assigneeId</ColNames>
       <RefSchemaName>just_in_mind_db</RefSchemaName>
       <RefTableName>users</RefTableName>
@@ -1221,75 +1240,75 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="302" parent="282" name="fk_owner_id">
+    <foreign-key id="306" parent="283" name="fk_owner_id">
       <ColNames>ownerId</ColNames>
       <RefSchemaName>just_in_mind_db</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="303" parent="282" name="fk_approver_id">
+    <foreign-key id="307" parent="283" name="fk_approver_id">
       <ColNames>approverId</ColNames>
       <RefSchemaName>just_in_mind_db</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="304" parent="283" name="id">
+    <column id="308" parent="284" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="305" parent="283" name="first_name">
+    <column id="309" parent="284" name="first_name">
       <Position>2</Position>
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="306" parent="283" name="last_name">
+    <column id="310" parent="284" name="last_name">
       <Position>3</Position>
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="307" parent="283" name="role_id">
+    <column id="311" parent="284" name="role_id">
       <Position>4</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="283" name="email">
+    <column id="312" parent="284" name="email">
       <Position>5</Position>
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="283" name="password">
+    <column id="313" parent="284" name="password">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="310" parent="283" name="id_UNIQUE">
+    <index id="314" parent="284" name="id_UNIQUE">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="311" parent="283" name="email_UNIQUE">
+    <index id="315" parent="284" name="email_UNIQUE">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="312" parent="283" name="PRIMARY">
+    <key id="316" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="313" parent="283" name="id_UNIQUE">
+    <key id="317" parent="284" name="id_UNIQUE">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>id_UNIQUE</UnderlyingIndexName>
     </key>
-    <key id="314" parent="283" name="email_UNIQUE">
+    <key id="318" parent="284" name="email_UNIQUE">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>email_UNIQUE</UnderlyingIndexName>
     </key>

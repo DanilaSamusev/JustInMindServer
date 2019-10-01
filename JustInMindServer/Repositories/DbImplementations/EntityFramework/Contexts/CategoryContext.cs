@@ -1,9 +1,9 @@
 using JustInMindServer.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace JustInMindServer.Repositories.Contexts
+namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Contexts
 {
-    public class TicketContext : DbContext
+    public class CategoryContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -14,6 +14,6 @@ namespace JustInMindServer.Repositories.Contexts
                 );
             }
         }
-        public virtual DbSet<Ticket> Tickets { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }

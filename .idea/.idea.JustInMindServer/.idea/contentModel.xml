@@ -12,6 +12,7 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="CategoryController.cs" t="Include" />
           <e p="TicketController.cs" t="Include" />
         </e>
         <e p="Entities" t="Include">
@@ -19,6 +20,7 @@
           <e p="Category.cs" t="Include" />
           <e p="Comment.cs" t="Include" />
           <e p="DTO" t="Include">
+            <e p="TicketCreationDTO.cs" t="Include" />
             <e p="TicketDTO.cs" t="Include" />
           </e>
           <e p="Enums" t="Include">
@@ -45,25 +47,30 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Repositories" t="Include">
-          <e p="Contexts" t="Include">
-            <e p="TicketContext.cs" t="Include" />
-            <e p="TicketDTOContext.cs" t="Include" />
-            <e p="UserContext.cs" t="Include" />
-          </e>
-          <e p="Implementations" t="Include">
-            <e p="CommentRepository.cs" t="Include" />
-            <e p="EntityDbContext.cs" t="Include" />
-            <e p="FeedbackRepository.cs" t="Include" />
-            <e p="HistoryRepository.cs" t="Include" />
-            <e p="TicketRepository.cs" t="Include" />
-            <e p="UserRepository.cs" t="Include" />
+          <e p="DbImplementations" t="Include">
+            <e p="EntityFramework" t="Include">
+              <e p="Contexts" t="Include">
+                <e p="CategoryContext.cs" t="Include" />
+                <e p="TicketContext.cs" t="Include" />
+                <e p="TicketDTOContext.cs" t="Include" />
+              </e>
+              <e p="Implementations" t="Include">
+                <e p="CategoryRepository.cs" t="Include" />
+                <e p="TicketRepository.cs" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="Interfaces" t="Include">
-            <e p="IRepository.cs" t="Include" />
+            <e p="ICategoryRepository.cs" t="Include" />
             <e p="ITicketRepository.cs" t="Include" />
           </e>
         </e>
-        <e p="Services" t="Include" />
+        <e p="Services" t="Include">
+          <e p="Validators" t="Include">
+            <e p="ITicketCreationDtoValidator.cs" t="Include" />
+            <e p="TicketCreationDtoValidator.cs" t="Include" />
+          </e>
+        </e>
         <e p="Startup.cs" t="Include" />
       </e>
       <e p="JustInMindServer.sln" t="IncludeFlat" />

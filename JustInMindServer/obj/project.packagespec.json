@@ -30,6 +30,18 @@
   "frameworks": {
     "netcoreapp2.2": {
       "dependencies": {
+        "FluentValidation.AspNetCore": {
+          "target": "Package",
+          "version": "[8.5.0, )"
+        },
+        "FluentValidation.Mvc5": {
+          "target": "Package",
+          "version": "[8.5.0, )"
+        },
+        "FluentValidation.WebApi": {
+          "target": "Package",
+          "version": "[8.5.0, )"
+        },
         "Microsoft.AspNetCore": {
           "target": "Package",
           "version": "[2.2.0, )"

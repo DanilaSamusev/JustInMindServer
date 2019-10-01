@@ -16,6 +16,63 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
         }
       },
+      "FluentValidation/8.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/8.5.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "8.5.0",
+          "FluentValidation.DependencyInjectionExtensions": "8.5.0",
+          "Microsoft.AspNetCore.Mvc": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {}
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/8.5.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "8.5.0",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
+      "FluentValidation.Mvc5/8.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/FluentValidation.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentValidation.Mvc.dll": {}
+        }
+      },
+      "FluentValidation.WebApi/8.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/FluentValidation.WebApi.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentValidation.WebApi.dll": {}
+        }
+      },
       "Google.Protobuf/3.6.1": {
         "type": "package",
         "dependencies": {
@@ -3378,6 +3435,79 @@
         "lib/netstandard2.0/BouncyCastle.Crypto.xml",
         "lib/xamarinios/BouncyCastle.Crypto.dll",
         "lib/xamarinios/BouncyCastle.Crypto.xml"
+      ]
+    },
+    "FluentValidation/8.5.0": {
+      "sha512": "NVMvFn37UcTQqeiAt4TIFajbGcVzYvvG4MR9q9Nm96E68yp0gVIF+oWEM2GQmn1siRGrf+mgJwQmbBaHcCblDQ==",
+      "type": "package",
+      "path": "fluentvalidation/8.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.8.5.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net45/FluentValidation.dll",
+        "lib/net45/FluentValidation.xml",
+        "lib/netstandard1.1/FluentValidation.dll",
+        "lib/netstandard1.1/FluentValidation.xml",
+        "lib/netstandard1.6/FluentValidation.dll",
+        "lib/netstandard1.6/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/8.5.0": {
+      "sha512": "p6G4vG7ZSn6RioN71OxCBekAUtHzxE8M9KrJuOS6Q+g28lvfOYGH13h0v32Thc94eOpJJMHA84VH/9W6vQ7NmA==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/8.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.aspnetcore.8.5.0.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/netcoreapp3.0/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.0/FluentValidation.AspNetCore.xml",
+        "lib/netstandard2.0/FluentValidation.AspNetCore.dll",
+        "lib/netstandard2.0/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/8.5.0": {
+      "sha512": "/NmnmQG/z3xCmp6wL4ftMipQnlH7Dxn4Keitbn+2kF9QKU0NVfz7Mk9covneeGvoyd7you6ojAkNwsQJJInKMQ==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/8.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.dependencyinjectionextensions.8.5.0.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
+    "FluentValidation.Mvc5/8.5.0": {
+      "sha512": "dtY2J1HPU6gaha0QSuTQuBeI3n0gQttO6nchBy8Fo5xRnicbcIiIAFq4fudL0v+F3y1vcgdCoxRRWrpFJ1GNpw==",
+      "type": "package",
+      "path": "fluentvalidation.mvc5/8.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.mvc5.8.5.0.nupkg.sha512",
+        "fluentvalidation.mvc5.nuspec",
+        "lib/net45/FluentValidation.Mvc.dll",
+        "lib/net45/FluentValidation.Mvc.xml"
+      ]
+    },
+    "FluentValidation.WebApi/8.5.0": {
+      "sha512": "Z0i+0Oz+NFPl3KOqsN9lIhnM61xq32cFoMOARngITJmA8tAcEZR/fbtSDfAk1HmWSHs2zJ90ljX3cMKzaEREnQ==",
+      "type": "package",
+      "path": "fluentvalidation.webapi/8.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.webapi.8.5.0.nupkg.sha512",
+        "fluentvalidation.webapi.nuspec",
+        "lib/net45/FluentValidation.WebApi.dll",
+        "lib/net45/FluentValidation.WebApi.xml"
       ]
     },
     "Google.Protobuf/3.6.1": {
@@ -9887,6 +10017,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "FluentValidation.AspNetCore >= 8.5.0",
+      "FluentValidation.Mvc5 >= 8.5.0",
+      "FluentValidation.WebApi >= 8.5.0",
       "Microsoft.AspNetCore >= 2.2.0",
       "Microsoft.AspNetCore.HttpsPolicy >= 2.2.0",
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
@@ -9939,6 +10072,18 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "FluentValidation.AspNetCore": {
+            "target": "Package",
+            "version": "[8.5.0, )"
+          },
+          "FluentValidation.Mvc5": {
+            "target": "Package",
+            "version": "[8.5.0, )"
+          },
+          "FluentValidation.WebApi": {
+            "target": "Package",
+            "version": "[8.5.0, )"
+          },
           "Microsoft.AspNetCore": {
             "target": "Package",
             "version": "[2.2.0, )"
@@ -9985,5 +10130,27 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FluentValidation.Mvc5 8.5.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "libraryId": "FluentValidation.Mvc5",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FluentValidation.WebApi 8.5.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "libraryId": "FluentValidation.WebApi",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    }
+  ]
 }

@@ -1,10 +1,12 @@
 ﻿using JustInMindServer.Models;
-using JustInMindServer.Repositories;
+using JustInMindServer.Repositories.DbImplementations.EntityFramework.Implementations;
 using JustInMindServer.Repositories.Implementations;
 using JustInMindServer.Repositories.Interfaces;
+using JustInMindServer.Services.Validators;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -26,14 +28,11 @@ namespace JustInMindServer
             
             string connectionString = Configuration.GetConnectionString("ConnectionString");
 
-            services.AddSingleton<TicketRepository>();
-            
+            services.AddSingleton<ICategoryRepository, CategoryRepository>();
             services.AddSingleton<ITicketRepository, TicketRepository>();
-            services.AddSingleton<IRepository<User>, UserRepository>();
-            services.AddSingleton<IRepository<History>, HistoryRepository>();
-            services.AddSingleton<IRepository<Feedback>, FeedbackRepository>();
-            services.AddSingleton<IRepository<Comment>, CommentRepository>();
 
+            services.AddSingleton<ITicketCreationDtoValidator, TicketCreationDtoValidator>();
+            
             services.AddCors(options => options.AddPolicy("CorsPolicy",
                 builder =>
                 {

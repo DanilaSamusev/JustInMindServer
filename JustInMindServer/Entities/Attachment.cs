@@ -1,4 +1,4 @@
-namespace JustInMindServer.Models
+namespace JustInMindServer.Entities
 {
     public class Attachment
     {
