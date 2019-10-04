@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace JustInMindServer.Repositories.Contexts
 {
-    public class TicketDTOContext : DbContext
+    public class TicketDtoContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

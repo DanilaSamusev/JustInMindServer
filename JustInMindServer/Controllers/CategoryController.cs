@@ -8,7 +8,6 @@ namespace JustInMindServer.Controllers
     [ApiController]
     public class CategoryController : Controller
     {
-
         private readonly ICategoryRepository _categoryRepository;
         
         public CategoryController(ICategoryRepository categoryRepository)

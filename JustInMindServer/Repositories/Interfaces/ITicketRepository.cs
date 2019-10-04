@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using JustInMindServer.Entities;
 using JustInMindServer.Entities.DTO;
 using JustInMindServer.Models;
 
@@ -9,7 +10,7 @@ namespace JustInMindServer.Repositories.Interfaces
         IEnumerable<Ticket> GetAll();
         IEnumerable<TicketDTO> GetAllDto();
         Ticket GetById(long id);
-        void Add(Ticket ticket);
+        long Add(Ticket ticket);
         void Delete(long id);
     }
 }

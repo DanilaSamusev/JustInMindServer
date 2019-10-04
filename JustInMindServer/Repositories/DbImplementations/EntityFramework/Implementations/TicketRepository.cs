@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
+using JustInMindServer.Entities;
 using JustInMindServer.Entities.DTO;
 using JustInMindServer.Entities.Enums;
 using JustInMindServer.Models;
 using JustInMindServer.Repositories.Contexts;
+using JustInMindServer.Repositories.DbImplementations.EntityFramework.Contexts;
 using JustInMindServer.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,17 +21,18 @@ namespace JustInMindServer.Repositories.Implementations
         {
             return null;
         }
-        
+
         public IEnumerable<TicketDTO> GetAllDto()
         {
-            TicketDTOContext dbContext = new TicketDTOContext();
-            
-                var ticketsDto = dbContext.TicketsDto.FromSql(
-                    "Select id, name, desiredResolutionDate, urgencyId, stateId from tickets")
-                    .ToList();
+            TicketDtoContext dbContext = new TicketDtoContext();
 
-                return ticketsDto;
-            
+            var ticketsDto = dbContext.TicketsDto.FromSql
+                (
+                    "Select id, name, desiredResolutionDate, urgencyId, stateId from tickets"
+                )
+                .ToList();
+
+            return ticketsDto;
         }
 
         public Ticket GetById(long id)
@@ -42,9 +45,14 @@ namespace JustInMindServer.Repositories.Implementations
             }
         }
 
-        public void Add(Ticket obj)
+        public long Add(Ticket ticket)
         {
-            throw new System.NotImplementedException();
+            TicketContext dbContext = new TicketContext();
+
+            dbContext.Tickets.Add(ticket);
+            dbContext.SaveChanges();
+
+            return ticket.Id;
         }
 
         public void Delete(long id)

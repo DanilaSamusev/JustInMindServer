@@ -1,12 +1,11 @@
-﻿using JustInMindServer.Models;
-using JustInMindServer.Repositories.DbImplementations.EntityFramework.Implementations;
+﻿using JustInMindServer.Repositories.DbImplementations.EntityFramework.Implementations;
 using JustInMindServer.Repositories.Implementations;
 using JustInMindServer.Repositories.Interfaces;
-using JustInMindServer.Services.Validators;
+using JustInMindServer.Services;
+using JustInMindServer.Validators;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -25,13 +24,12 @@ namespace JustInMindServer
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
-            string connectionString = Configuration.GetConnectionString("ConnectionString");
-
             services.AddSingleton<ICategoryRepository, CategoryRepository>();
             services.AddSingleton<ITicketRepository, TicketRepository>();
-
+            
             services.AddSingleton<ITicketCreationDtoValidator, TicketCreationDtoValidator>();
+
+            services.AddSingleton<TicketService>();
             
             services.AddCors(options => options.AddPolicy("CorsPolicy",
                 builder =>

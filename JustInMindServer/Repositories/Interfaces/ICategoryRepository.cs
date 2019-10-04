@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using JustInMindServer.Entities;
 using JustInMindServer.Models;
 
 namespace JustInMindServer.Repositories.Interfaces

@@ -1,7 +1,7 @@
-using JustInMindServer.Models;
+using JustInMindServer.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace JustInMindServer.Repositories.Contexts
+namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Contexts
 {
     public class TicketContext : DbContext
     {

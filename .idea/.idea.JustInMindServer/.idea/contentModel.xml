@@ -66,12 +66,13 @@
           </e>
         </e>
         <e p="Services" t="Include">
-          <e p="Validators" t="Include">
-            <e p="ITicketCreationDtoValidator.cs" t="Include" />
-            <e p="TicketCreationDtoValidator.cs" t="Include" />
-          </e>
+          <e p="TicketService.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
+        <e p="Validators" t="Include">
+          <e p="ITicketCreationDtoValidator.cs" t="Include" />
+          <e p="TicketCreationDtoValidator.cs" t="Include" />
+        </e>
       </e>
       <e p="JustInMindServer.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
