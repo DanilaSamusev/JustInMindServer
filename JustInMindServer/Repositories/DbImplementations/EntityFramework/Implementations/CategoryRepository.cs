@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Linq;
 using JustInMindServer.Entities;
 using JustInMindServer.Models;
-using JustInMindServer.Repositories.Contexts;
 using JustInMindServer.Repositories.DbImplementations.EntityFramework.Contexts;
 using JustInMindServer.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;

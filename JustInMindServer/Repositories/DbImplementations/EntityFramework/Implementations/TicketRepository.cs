@@ -2,9 +2,6 @@ using System.Collections.Generic;
 using System.Linq;
 using JustInMindServer.Entities;
 using JustInMindServer.Entities.DTO;
-using JustInMindServer.Entities.Enums;
-using JustInMindServer.Models;
-using JustInMindServer.Repositories.Contexts;
 using JustInMindServer.Repositories.DbImplementations.EntityFramework.Contexts;
 using JustInMindServer.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 //var tickets = dbContext.Tickets.FromSql("SELECT t.id, t.name, t.description, t.created_on, t.desired_resolution_date, t.assignee_id, t.owner_id, s.state, t.category_id, t.urgency_id, t.approver_id FROM tickets t, state s WHERE t.state_id = s.id")
 
 
-namespace JustInMindServer.Repositories.Implementations
+namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Implementations
 {
     public class TicketRepository : ITicketRepository
     {

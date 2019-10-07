@@ -4,6 +4,7 @@ using JustInMindServer.Models;
 using JustInMindServer.Repositories.Interfaces;
 using JustInMindServer.Services;
 using JustInMindServer.Validators;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JustInMindServer.Controllers
@@ -26,16 +27,21 @@ namespace JustInMindServer.Controllers
         public IActionResult GetAllTickets()
         {
             var ticketsDto = _ticketRepository.GetAllDto();
-            
+
             return Ok(ticketsDto);
         }
 
         [HttpPost("ticket")]
         public IActionResult CreateTicket([FromBody] TicketCreationDto ticketDto)
         {
-            long ticketId = _ticketService.AddTicket(ticketDto);
-            
-            return Ok(ticketId);
+            try{
+                var ticketId = _ticketService.AddTicket(ticketDto);
+                return Ok(ticketId);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

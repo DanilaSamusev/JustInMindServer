@@ -1,8 +1,7 @@
 using JustInMindServer.Entities.DTO;
-using JustInMindServer.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace JustInMindServer.Repositories.Contexts
+namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Contexts
 {
     public class TicketDtoContext : DbContext
     {
@@ -16,6 +15,6 @@ namespace JustInMindServer.Repositories.Contexts
             }
         }
 
-        public virtual DbSet<TicketDTO> TicketsDto { get; set; }
+        public DbSet<TicketDTO> TicketsDto { get; set; }
     }
 }
