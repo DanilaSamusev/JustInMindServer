@@ -19,6 +19,7 @@ namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Implem
             return null;
         }
 
+        //TODO not in this class
         public IEnumerable<TicketDTO> GetAllDto()
         {
             TicketDtoContext dbContext = new TicketDtoContext();

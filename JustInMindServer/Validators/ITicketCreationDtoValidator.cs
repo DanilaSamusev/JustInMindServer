@@ -5,6 +5,6 @@ namespace JustInMindServer.Validators
 {
     public interface ITicketCreationDtoValidator
     {
-        bool IsValid(TicketCreationDto ticketDto);
+        void Validate(TicketCreationDto ticketDto);
     }
 }

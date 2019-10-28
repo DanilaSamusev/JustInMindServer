@@ -1,7 +1,6 @@
 using System;
 using JustInMindServer.Entities;
 using JustInMindServer.Entities.DTO;
-using JustInMindServer.Models;
 using JustInMindServer.Repositories.Interfaces;
 using JustInMindServer.Validators;
 
@@ -22,15 +21,12 @@ namespace JustInMindServer.Services
         {
             if (dto == null)
             {
-                throw new NullReferenceException("TicketCreationDto can't be null!");
+                throw new NullReferenceException("Ticket dto for creation can't be null!");
             }
 
-            if (!_ticketCreationDtoValidator.IsValid(dto))
-            {
-                throw new ArgumentException("Check input data!");
-            }
+            _ticketCreationDtoValidator.Validate(dto);
 
-            Ticket ticket = new Ticket
+            var ticket = new Ticket
             (
                 dto.Name,
                 dto.Description,

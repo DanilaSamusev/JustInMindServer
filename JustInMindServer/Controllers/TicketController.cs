@@ -1,10 +1,9 @@
 using System;
+using System.Linq;
+using FluentValidation;
 using JustInMindServer.Entities.DTO;
-using JustInMindServer.Models;
 using JustInMindServer.Repositories.Interfaces;
 using JustInMindServer.Services;
-using JustInMindServer.Validators;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JustInMindServer.Controllers
@@ -31,12 +30,25 @@ namespace JustInMindServer.Controllers
             return Ok(ticketsDto);
         }
 
+        [HttpGet("ticket")]
+        public IActionResult GetTicketById([FromQuery] long ticketId)
+        {
+            var ticket = _ticketRepository.GetById(ticketId);
+            
+            return Ok(ticket);
+        }
+        
+        //TODO avoid ex.Errors.First() - FluentValidation only 
         [HttpPost("ticket")]
         public IActionResult CreateTicket([FromBody] TicketCreationDto ticketDto)
         {
             try{
                 var ticketId = _ticketService.AddTicket(ticketDto);
                 return Ok(ticketId);
+            }
+            catch(ValidationException ex)
+            {
+                return BadRequest(ex.Errors.First().ErrorMessage);
             }
             catch(Exception ex)
             {

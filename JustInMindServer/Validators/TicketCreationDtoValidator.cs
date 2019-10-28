@@ -1,6 +1,5 @@
 using FluentValidation;
 using JustInMindServer.Entities.DTO;
-using JustInMindServer.Models;
 
 namespace JustInMindServer.Validators
 {
@@ -8,14 +7,14 @@ namespace JustInMindServer.Validators
     {
         public TicketCreationDtoValidator()
         {
-            RuleFor(ticketDto => ticketDto.CategoryId).NotEqual(0);
-            RuleFor(ticketDto => ticketDto.Name).NotEmpty();
-            RuleFor(ticketDto => ticketDto.UrgencyId).NotEqual(0);
+            RuleFor(ticketDto => ticketDto.CategoryId).NotEqual(0).WithMessage("Fill category!");
+            RuleFor(ticketDto => ticketDto.Name).NotEmpty().WithMessage("Fill name!");
+            RuleFor(ticketDto => ticketDto.UrgencyId).NotEqual(0).WithMessage("Fill urgency!");
         }
 
-        public bool IsValid(TicketCreationDto dto)
+        public new void Validate(TicketCreationDto dto)
         {
-            return Validate(dto).IsValid;
+            this.ValidateAndThrow(dto);
         }
     }
 }
