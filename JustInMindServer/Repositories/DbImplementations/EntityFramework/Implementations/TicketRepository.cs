@@ -1,13 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using JustInMindServer.Entities;
-using JustInMindServer.Entities.DTO;
 using JustInMindServer.Repositories.DbImplementations.EntityFramework.Contexts;
 using JustInMindServer.Repositories.Interfaces;
-using Microsoft.EntityFrameworkCore;
-
-
-//var tickets = dbContext.Tickets.FromSql("SELECT t.id, t.name, t.description, t.created_on, t.desired_resolution_date, t.assignee_id, t.owner_id, s.state, t.category_id, t.urgency_id, t.approver_id FROM tickets t, state s WHERE t.state_id = s.id")
 
 
 namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Implementations
@@ -19,23 +14,9 @@ namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Implem
             return null;
         }
 
-        //TODO not in this class
-        public IEnumerable<TicketDTO> GetAllDto()
-        {
-            TicketDtoContext dbContext = new TicketDtoContext();
-
-            var ticketsDto = dbContext.TicketsDto.FromSql
-                (
-                    "Select id, name, desiredResolutionDate, urgencyId, stateId from tickets"
-                )
-                .ToList();
-
-            return ticketsDto;
-        }
-
         public Ticket GetById(long id)
         {
-            using (TicketContext dbContext = new TicketContext())
+            using (var dbContext = new TicketContext())
             {
                 var ticket = dbContext.Tickets.FirstOrDefault(t => t.Id == id);
 
@@ -45,7 +26,7 @@ namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Implem
 
         public long Add(Ticket ticket)
         {
-            TicketContext dbContext = new TicketContext();
+            var dbContext = new TicketContext();
 
             dbContext.Tickets.Add(ticket);
             dbContext.SaveChanges();

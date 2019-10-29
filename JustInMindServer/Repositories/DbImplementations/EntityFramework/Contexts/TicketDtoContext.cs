@@ -1,4 +1,4 @@
-using JustInMindServer.Entities.DTO;
+using JustInMindServer.Dto;
 using Microsoft.EntityFrameworkCore;
 
 namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Contexts
@@ -15,6 +15,7 @@ namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Contex
             }
         }
 
-        public DbSet<TicketDTO> TicketsDto { get; set; }
+        public DbSet<TicketDtoToOverview> TicketsDtoToOverview { get; set; }
+        public DbSet<TicketDtoToDisplay> TicketsDtoToDisplay { get; set; }
     }
 }

@@ -1,9 +1,9 @@
 using System;
 using JustInMindServer.Entities.Enums;
 
-namespace JustInMindServer.Entities.DTO
+namespace JustInMindServer.Dto
 {
-    public class TicketCreationDto
+    public class TicketDtoToCreateTicket
     {
         public string Name { get; set; }
         public string Description { get; set; }

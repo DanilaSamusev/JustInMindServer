@@ -5,12 +5,11 @@ using JustInMindServer.Entities.Enums;
 namespace JustInMindServer.Entities
 {
     public class Ticket
-    { 
+    {
         public Ticket()
         {
-            
         }
-        
+
         public Ticket(
             string name, string description, DateTime createdOn, DateTime? desiredResolutionDate,
             long ownerId, State stateId, long categoryId, long urgencyId)

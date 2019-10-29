@@ -1,6 +1,6 @@
 using System;
+using JustInMindServer.Dto;
 using JustInMindServer.Entities;
-using JustInMindServer.Entities.DTO;
 using JustInMindServer.Repositories.Interfaces;
 using JustInMindServer.Validators;
 
@@ -17,25 +17,25 @@ namespace JustInMindServer.Services
             _ticketRepository = ticketRepository;
         }
 
-        public long AddTicket(TicketCreationDto dto)
+        public long AddTicket(TicketDtoToCreateTicket dtoToCreateTicket)
         {
-            if (dto == null)
+            if (dtoToCreateTicket == null)
             {
                 throw new NullReferenceException("Ticket dto for creation can't be null!");
             }
 
-            _ticketCreationDtoValidator.Validate(dto);
+            _ticketCreationDtoValidator.Validate(dtoToCreateTicket);
 
             var ticket = new Ticket
             (
-                dto.Name,
-                dto.Description,
-                dto.CreatedOn,
-                dto.DesiredResolutionDate,
+                dtoToCreateTicket.Name,
+                dtoToCreateTicket.Description,
+                dtoToCreateTicket.CreatedOn,
+                dtoToCreateTicket.DesiredResolutionDate,
                 1,
-                dto.StateId,
-                dto.CategoryId,
-                dto.UrgencyId
+                dtoToCreateTicket.StateId,
+                dtoToCreateTicket.CategoryId,
+                dtoToCreateTicket.UrgencyId
             );
             
             return _ticketRepository.Add(ticket);

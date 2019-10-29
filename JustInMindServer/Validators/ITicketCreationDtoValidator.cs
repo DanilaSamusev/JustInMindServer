@@ -1,10 +1,10 @@
-using JustInMindServer.Entities.DTO;
+using JustInMindServer.Dto;
 using JustInMindServer.Models;
 
 namespace JustInMindServer.Validators
 {
     public interface ITicketCreationDtoValidator
     {
-        void Validate(TicketCreationDto ticketDto);
+        void Validate(TicketDtoToCreateTicket ticketDtoToCreateTicket);
     }
 }

@@ -1,9 +1,9 @@
 using FluentValidation;
-using JustInMindServer.Entities.DTO;
+using JustInMindServer.Dto;
 
 namespace JustInMindServer.Validators
 {
-    public class TicketCreationDtoValidator : AbstractValidator<TicketCreationDto>, ITicketCreationDtoValidator
+    public class TicketCreationDtoValidator : AbstractValidator<TicketDtoToCreateTicket>, ITicketCreationDtoValidator
     {
         public TicketCreationDtoValidator()
         {
@@ -12,9 +12,9 @@ namespace JustInMindServer.Validators
             RuleFor(ticketDto => ticketDto.UrgencyId).NotEqual(0).WithMessage("Fill urgency!");
         }
 
-        public new void Validate(TicketCreationDto dto)
+        public new void Validate(TicketDtoToCreateTicket dtoToCreateTicket)
         {
-            this.ValidateAndThrow(dto);
+            this.ValidateAndThrow(dtoToCreateTicket);
         }
     }
 }
