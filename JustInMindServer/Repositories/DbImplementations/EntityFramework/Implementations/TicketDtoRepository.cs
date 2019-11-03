@@ -15,7 +15,7 @@ namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Implem
 
             var ticketsDto = dbContext.TicketsDtoToDisplay.FromSql
                 (
-                    "Select id, name, desiredResolutionDate, urgencyId, stateId from tickets"
+                    "Select id, ownerId, name, desiredResolutionDate, urgencyId, stateId from tickets"
                 )
                 .ToList();
 
