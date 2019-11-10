@@ -1,9 +1,9 @@
-namespace JustInMindServer.Entities.Enums
+namespace JustInMindServer.Enums
 {
     public enum Urgency
     {
         Low = 1,
-        Megium = 2,
+        Average = 2,
         High = 3,
         Critical = 4,
     }

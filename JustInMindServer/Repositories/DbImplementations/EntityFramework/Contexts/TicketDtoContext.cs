@@ -17,5 +17,6 @@ namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Contex
 
         public DbSet<TicketDtoToOverview> TicketsDtoToOverview { get; set; }
         public DbSet<TicketDtoToDisplay> TicketsDtoToDisplay { get; set; }
+        public DbSet<TicketDtoToUpdate> TicketsDtoToUpdate { get; set; }
     }
 }

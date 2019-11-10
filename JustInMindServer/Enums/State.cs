@@ -1,4 +1,4 @@
-namespace JustInMindServer.Entities.Enums
+namespace JustInMindServer.Enums
 {
     public enum State
     {

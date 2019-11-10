@@ -33,20 +33,28 @@ namespace JustInMindServer.Controllers
             return Ok(ticketsDto);
         }
 
-        [HttpGet("ticket")]
-        public IActionResult GetTicketById([FromQuery] long ticketId)
+        [HttpGet("ticketOverview")]
+        public IActionResult GetTicketToOverViewById([FromQuery] long ticketId)
         {
             var ticket = _ticketDtoRepository.GetDtoToOverviewById(ticketId);
             
             return Ok(ticket);
         }
+
+        [HttpGet("ticketUpdate")]
+        public IActionResult GetTicketToUpdateById([FromQuery] long ticketId)
+        {
+            var ticket = _ticketDtoRepository.GetDtoToUpdateById(ticketId);
+
+            return Ok(ticket);
+        }
         
         //TODO avoid ex.Errors.First() - FluentValidation only 
         [HttpPost("ticket")]
-        public IActionResult CreateTicket([FromBody] TicketDtoToCreateTicket ticketDtoToCreateTicket)
+        public IActionResult CreateTicket([FromBody] TicketDtoToCreate ticketDtoToCreate)
         {
             try{
-                var ticketId = _ticketService.AddTicket(ticketDtoToCreateTicket);
+                var ticketId = _ticketService.AddTicket(ticketDtoToCreate);
                 return Ok(ticketId);
             }
             catch(ValidationException ex)
@@ -58,5 +66,7 @@ namespace JustInMindServer.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        
+       // public IActionResult UpdateTicket([FromBody] )
     }
 }

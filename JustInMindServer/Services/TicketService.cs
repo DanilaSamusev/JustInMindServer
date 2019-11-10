@@ -17,25 +17,25 @@ namespace JustInMindServer.Services
             _ticketRepository = ticketRepository;
         }
 
-        public long AddTicket(TicketDtoToCreateTicket dtoToCreateTicket)
+        public long AddTicket(TicketDtoToCreate dtoToCreate)
         {
-            if (dtoToCreateTicket == null)
+            if (dtoToCreate == null)
             {
                 throw new NullReferenceException("Ticket dto for creation can't be null!");
             }
-
-            _ticketCreationDtoValidator.Validate(dtoToCreateTicket);
+            
+            _ticketCreationDtoValidator.Validate(dtoToCreate);
 
             var ticket = new Ticket
             (
-                dtoToCreateTicket.Name,
-                dtoToCreateTicket.Description,
-                dtoToCreateTicket.CreatedOn,
-                dtoToCreateTicket.DesiredResolutionDate,
+                dtoToCreate.Name,
+                dtoToCreate.Description,
+                dtoToCreate.CreatedOn,
+                dtoToCreate.DesiredResolutionDate,
                 1,
-                dtoToCreateTicket.StateId,
-                dtoToCreateTicket.CategoryId,
-                dtoToCreateTicket.UrgencyId
+                dtoToCreate.StateId,
+                dtoToCreate.CategoryId,
+                dtoToCreate.UrgencyId
             );
             
             return _ticketRepository.Add(ticket);

@@ -7,5 +7,6 @@ namespace JustInMindServer.Repositories.Interfaces
     { 
         IEnumerable<TicketDtoToDisplay> GetAllDtoToDisplay();
         IEnumerable<TicketDtoToOverview> GetDtoToOverviewById(long ticketId);
+        TicketDtoToUpdate GetDtoToUpdateById(long ticketId);
     }
 }

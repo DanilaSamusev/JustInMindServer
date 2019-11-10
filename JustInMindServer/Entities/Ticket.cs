@@ -1,6 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-using JustInMindServer.Entities.Enums;
+using JustInMindServer.Enums;
 
 namespace JustInMindServer.Entities
 {

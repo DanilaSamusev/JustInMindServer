@@ -3,7 +3,7 @@ using JustInMindServer.Dto;
 
 namespace JustInMindServer.Validators
 {
-    public class TicketCreationDtoValidator : AbstractValidator<TicketDtoToCreateTicket>, ITicketCreationDtoValidator
+    public class TicketCreationDtoValidator : AbstractValidator<TicketDtoToCreate>, ITicketCreationDtoValidator
     {
         public TicketCreationDtoValidator()
         {
@@ -12,9 +12,9 @@ namespace JustInMindServer.Validators
             RuleFor(ticketDto => ticketDto.UrgencyId).NotEqual(0).WithMessage("Fill urgency!");
         }
 
-        public new void Validate(TicketDtoToCreateTicket dtoToCreateTicket)
+        public new void Validate(TicketDtoToCreate dtoToCreate)
         {
-            this.ValidateAndThrow(dtoToCreateTicket);
+            this.ValidateAndThrow(dtoToCreate);
         }
     }
 }

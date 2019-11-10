@@ -1,3 +1,4 @@
+using JustInMindServer.Entities;
 using JustInMindServer.Models;
 using Microsoft.EntityFrameworkCore;
 

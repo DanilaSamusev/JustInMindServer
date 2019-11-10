@@ -1,5 +1,5 @@
 using System;
-using JustInMindServer.Entities.Enums;
+using JustInMindServer.Enums;
 
 namespace JustInMindServer.Dto
 {
