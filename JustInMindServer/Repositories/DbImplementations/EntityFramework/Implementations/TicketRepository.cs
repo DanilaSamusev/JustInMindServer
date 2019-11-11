@@ -54,8 +54,9 @@ namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Implem
                     break;
             }
 
-            dbContext.Database.ExecuteSqlCommand(
-                $"Update tickets set stateId = {stateId} where id = {ticketId}");
+            string command = $"Update tickets set stateId = {stateId}{actionPerformerQuery} where id = {ticketId}";
+            
+            dbContext.Database.ExecuteSqlCommand(command);
         }
     }
 }
