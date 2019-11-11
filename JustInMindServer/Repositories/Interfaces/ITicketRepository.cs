@@ -10,5 +10,6 @@ namespace JustInMindServer.Repositories.Interfaces
         Ticket GetById(long id);
         long Add(Ticket ticket);
         void Delete(long id);
+        void UpdateState(long ticketId, long stateId, long userId);
     }
 }

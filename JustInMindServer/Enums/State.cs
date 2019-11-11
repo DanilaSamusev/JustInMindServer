@@ -2,12 +2,12 @@ namespace JustInMindServer.Enums
 {
     public enum State
     {
-        Draft = 0,
-        New = 1,
-        Approved = 2,
-        Declined = 3,
-        InProgress = 4,
-        Done = 5,
-        Canceled = 6,
+        Draft = 1,
+        New = 2,
+        Approved = 3,
+        Declined = 4,
+        InProgress = 5,
+        Done = 6,
+        Canceled = 7,
     }
 }

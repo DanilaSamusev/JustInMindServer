@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using FluentValidation;
 using JustInMindServer.Dto;
+using JustInMindServer.Entities;
 using JustInMindServer.Repositories.Interfaces;
 using JustInMindServer.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -66,7 +67,14 @@ namespace JustInMindServer.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        
+
+        [HttpPut("ticketState")]
+        public IActionResult UpdateTicketState([FromBody] TicketStateUpdateData data)
+        {
+            _ticketRepository.UpdateState(data.TicketId, data.StateId, data.UserId);
+            
+            return Ok();
+        }
        // public IActionResult UpdateTicket([FromBody] )
     }
 }
