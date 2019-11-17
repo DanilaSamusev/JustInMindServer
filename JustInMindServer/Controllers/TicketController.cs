@@ -3,6 +3,8 @@ using System.Linq;
 using FluentValidation;
 using JustInMindServer.Dto;
 using JustInMindServer.Entities;
+using JustInMindServer.Repositories.DbImplementations.EntityFramework.Contexts;
+using JustInMindServer.Repositories.DbImplementations.EntityFramework.Implementations;
 using JustInMindServer.Repositories.Interfaces;
 using JustInMindServer.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -16,14 +18,19 @@ namespace JustInMindServer.Controllers
     {
         private readonly ITicketRepository _ticketRepository;
         private readonly ITicketDtoRepository _ticketDtoRepository;
+        private readonly ICommentRepository _commentRepository;
+        private readonly IHistoryRepository _historyRepository;
         private readonly TicketService _ticketService;
 
         public TicketController(ITicketRepository ticketRepository,
-            ITicketDtoRepository ticketCreationDto, TicketService ticketService)
+            ITicketDtoRepository ticketCreationDto, TicketService ticketService,
+            ICommentRepository commentRepository, IHistoryRepository historyRepository)
         {
             _ticketRepository = ticketRepository;
             _ticketDtoRepository = ticketCreationDto;
             _ticketService = ticketService;
+            _commentRepository = commentRepository;
+            _historyRepository = historyRepository;
         }
 
         [HttpGet("allTickets")]
@@ -38,7 +45,7 @@ namespace JustInMindServer.Controllers
         public IActionResult GetTicketToOverViewById([FromQuery] long ticketId)
         {
             var ticket = _ticketDtoRepository.GetDtoToOverviewById(ticketId);
-            
+
             return Ok(ticket);
         }
 
@@ -49,20 +56,21 @@ namespace JustInMindServer.Controllers
 
             return Ok(ticket);
         }
-        
+
         //TODO avoid ex.Errors.First() - FluentValidation only 
         [HttpPost("ticket")]
         public IActionResult CreateTicket([FromBody] TicketDtoToCreate ticketDtoToCreate)
         {
-            try{
+            try
+            {
                 var ticketId = _ticketService.AddTicket(ticketDtoToCreate);
                 return Ok(ticketId);
             }
-            catch(ValidationException ex)
+            catch (ValidationException ex)
             {
                 return BadRequest(ex.Errors.First().ErrorMessage);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
@@ -72,9 +80,21 @@ namespace JustInMindServer.Controllers
         public IActionResult UpdateTicketState([FromBody] TicketStateUpdateData data)
         {
             _ticketRepository.UpdateState(data.TicketId, data.StateId, data.UserId);
-            
             return Ok();
         }
-       // public IActionResult UpdateTicket([FromBody] )
+
+        [HttpGet("ticketHistory")]
+        public IActionResult GetTicketHistory([FromQuery] long ticketId)
+        {
+            var histories = _historyRepository.GetAllByTicketId(ticketId);
+            return Ok(histories);
+        }
+
+        [HttpGet("ticketComments")]
+        public IActionResult GetTicketComments([FromQuery] long ticketId)
+        {
+            var comments = _commentRepository.GetAllByTicketId(ticketId);
+            return Ok(comments);
+        }
     }
 }

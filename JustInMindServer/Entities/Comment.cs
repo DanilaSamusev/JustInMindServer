@@ -1,6 +1,6 @@
 using System;
 
-namespace JustInMindServer.Models
+namespace JustInMindServer.Entities
 {
     public class Comment
     {

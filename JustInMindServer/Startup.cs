@@ -1,4 +1,5 @@
-﻿using JustInMindServer.Repositories.DbImplementations.EntityFramework.Implementations;
+﻿using JustInMindServer.Repositories.DbImplementations.EntityFramework.Contexts;
+using JustInMindServer.Repositories.DbImplementations.EntityFramework.Implementations;
 using JustInMindServer.Repositories.Interfaces;
 using JustInMindServer.Services;
 using JustInMindServer.Validators;
@@ -14,7 +15,6 @@ namespace JustInMindServer
     {
         public Startup(IConfiguration configuration)
         {
-            
             Configuration = configuration;
         }
 
@@ -25,9 +25,9 @@ namespace JustInMindServer
             services.AddSingleton<ICategoryRepository, CategoryRepository>();
             services.AddSingleton<ITicketRepository, TicketRepository>();
             services.AddSingleton<ITicketDtoRepository, TicketDtoRepository>();
-            
+            services.AddSingleton<IHistoryRepository, HistoryRepository>();
+            services.AddSingleton<ICommentRepository, CommentRepository>();
             services.AddSingleton<ITicketCreationDtoValidator, TicketCreationDtoValidator>();
-
             services.AddSingleton<TicketService>();
             
             services.AddCors(options => options.AddPolicy("CorsPolicy",

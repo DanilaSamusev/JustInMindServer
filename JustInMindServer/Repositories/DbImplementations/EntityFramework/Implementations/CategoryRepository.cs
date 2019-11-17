@@ -12,13 +12,9 @@ namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Implem
     {
         public IEnumerable<Category> GetAll()
         {
-
-            CategoryContext dbContext = new CategoryContext();
-            
-                var categories = dbContext.Categories.FromSql("Select * from categories").ToList();
-                
-                return categories;
-            
+            var dbContext = new CategoryContext();
+            var categories = dbContext.Categories.FromSql("Select * from categories").ToList();
+            return categories;
         }
 
         public Ticket GetById(long id)

@@ -1,10 +1,10 @@
 using System;
 
-namespace JustInMindServer.Models
+namespace JustInMindServer.Entities
 {
     public class History
     {
-        private readonly long _id;
+        /*private readonly long _id;
         private readonly long _ticketId;
         private readonly DateTime _date;
         private readonly string _action;
@@ -19,13 +19,13 @@ namespace JustInMindServer.Models
             _action = action;
             _userId = userId;
             _description = description;
-        }
+        }*/
 
-        public long Id => _id;
-        public long TicketId => _ticketId;
-        public DateTime Date => _date;
-        public string Action => _action;
-        public long UserId => _userId;
-        public string Description => _description;
+        public long Id { get; set; }
+        public long TicketId { get; set; }
+        public DateTime Date { get; set; }
+        public string Action { get; set; }
+        public long UserId { get; set; }
+        public string Description { get; set; }
     }
 }

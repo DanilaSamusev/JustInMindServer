@@ -12,7 +12,6 @@ namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Implem
         public IEnumerable<TicketDtoToDisplay> GetAllDtoToDisplay()
         {
             var dbContext = new TicketDtoContext();
-
             var ticketsDto = dbContext.TicketsDtoToDisplay.FromSql
                 (
                     "Select id, ownerId, name, desiredResolutionDate, urgencyId, stateId from tickets"
@@ -25,7 +24,6 @@ namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Implem
         public TicketDtoToUpdate GetDtoToUpdateById(long ticketId)
         {
             var dbContext = new TicketDtoContext();
-
             var ticketDto = dbContext.TicketsDtoToUpdate.FromSql(
                 "Select t.id, t.name, description, desiredResolutionDate, urgencyId, c.id as categoryId " + 
                 "from tickets t " +
@@ -39,7 +37,6 @@ namespace JustInMindServer.Repositories.DbImplementations.EntityFramework.Implem
         public IEnumerable<TicketDtoToOverview> GetDtoToOverviewById(long ticketId)
         {
             var dbContext = new TicketDtoContext();
-
             var ticketsDto = dbContext.TicketsDtoToOverview.FromSql
             (
                 "Select t.id, t.name, createdOn, stateId, urgencyId, desiredResolutionDate, u1.firstName as ownerName, " +
